@@ -8,8 +8,11 @@
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
 }
-html{
-    width: 100%;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 ul{
     list-style: none;
@@ -22,12 +25,13 @@ a{
 header{
     padding: 20px 5%;
     width:100%;
-    height:150vh;
+    min-height:100vh;
     background-image: url('images/hero-bg.png');
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
     /* background-attachment: scroll; */
+    background-color: #11065C;
 }
 nav{
     display: flex;
@@ -84,10 +88,10 @@ nav{
         display: flex !important;
     }
     header{
-        /* background-size: c; */
         width:100%;
         background:linear-gradient(to right,#11065Cff,#0B0252ff, #1D126Eff,#05004Aff,#000001ff);
-        /* height: 120vh; */
+        background-size: cover;
+        background-position: center center;
     }
 }
 .sidebar ul li a{

@@ -535,6 +535,10 @@ nav{
         gap:100px;
         margin-inline: 50px;
     }
+    .review-content> h2{
+        text-align: center;
+        margin-inline: 50px;
+    }
 }
 
 /* footer */

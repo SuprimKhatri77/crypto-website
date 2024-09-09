@@ -288,20 +288,23 @@ nav{
 .about-section{
     background-color: #00204a;
     color:white;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .about-content{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap:50px;
+    padding: 20px;
 }
 .about-head{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap:10px;
+    text-align: center;
 }
 .about-head h2{
     font-size: 2rem;
@@ -327,4 +330,217 @@ nav{
 }
 .about-read:hover{
     background-color:#00bcf08c ;
+}
+
+@media(max-width:1024px){
+    .about-us{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-text{
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media(max-width:480px){
+    .about-text{
+        font-size:14px;
+    }
+    .about-us img{
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media(max-width:435px){
+    .about-us img{
+        width: 300px;
+        height: 200px;
+    }
+}
+
+/* why-us-section */
+.why-us-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:70px;
+}
+.why-us-content > h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.why-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+}
+
+.why-us-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+.why-us-text > h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.why-us > span{
+    border: 4px solid #00204a;
+    padding:25px 30px;
+    border-radius:50% ;
+}
+
+@media(max-width:1000px){
+    .why-us-content{
+        text-align: center;
+    }
+}
+
+/* team-section */
+.team-section{
+    margin-top: 100px;
+    background-color: #00204a;
+    /* padding-block: 30px; */
+}
+.team-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:40px;
+    padding-block: 100px;
+}
+
+.team-container{
+    display: flex;
+    gap:30px;
+}
+.our-team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:20px;
+    color:white;
+    background: -webkit-gradient(linear, left top, left bottom, from(#002759), to(#002b64));
+    padding:50px 60px;
+}
+
+.team-img img{
+    border: 5px solid white;
+    border-radius: 50%;
+}
+.team-social-links ul{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    gap:15px;
+}
+.team-social-links ul li a i{
+    color:white;
+    transition: color 0.2s ease-in-out;
+}
+
+.team-content > h2{
+    font-size: 2rem;
+}
+
+.about-team .name{
+    font-size:1.2rem;
+    color: #00bbf0;
+    font-weight: 600;
+}
+
+.about-team .job-desc{
+    font-size: 14px;
+}
+
+.team-social-links ul li a i:hover{
+    color:#00bbf0;
+}
+
+@media (max-width:1024px){
+    .team-container{
+        flex-direction: column;
+    }
+}
+
+/* review sec */
+
+.review-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:100px;
+}
+.review-content > h2{
+    font-size: 2rem;
+}
+.cust-img img{
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top:-50px;
+    left:40px;
+}
+.c-1{
+    position: absolute;
+    top:-50px;
+    left:40px;
+}
+.customer-reviews{
+    display: flex;
+    gap:20px;
+    /* position: relative; */
+}
+.client-id{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+}
+.rev-txt{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding:70px 40px;
+    background-color: white;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, .15);
+    /* position: absolute; */
+}
+
+.cust{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.c-name{
+    font-weight: 600;
+}
+.location{
+    font-size: 14px;
+    /* font-weight: 500; */
+    color: #0c0c0c;
+}
+
+@media (max-width:1024px){
+    .customer-reviews{
+        flex-direction: column;
+        gap:100px;
+        margin-inline: 50px;
+    }
+}
+
+/* footer */
+footer{
+    background-color: #00204a;
+    color:white;
+    margin-top: 50px;
+    padding:100px;
+    text-align: center;
 }
